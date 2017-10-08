@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  += -Wall -Wextra
-LDFLAGS += -ldl -lpopt
+LDFLAGS += -ldl -lpopt -lavformat
 
 TARGETS = fftest
 TGTOBJ  = $(patsubst %, obj/%.o, $(TARGETS))
